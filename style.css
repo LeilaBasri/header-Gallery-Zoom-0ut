@@ -46,13 +46,15 @@ header{
 .zoomIn-Gallery{
     width: 100% !important;
     height: 100% !important;
-    min-height: 800px;
+    min-height: 650px;
     background-image: url("images/13.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 100px;
     text-align: center;
+    position: absolute;
+    top: 80px;
     margin: 0 !important;
     z-index: 1;
 }
@@ -65,12 +67,19 @@ header{
     border-radius: 5px;
     box-shadow: 0 1px 5px #000;
 }
-
-.imageGrid{
+.header{position: relative;}
+.imageGride{
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 650px;
+    position: absolute;
+    top: 80px;
+    left: 0;
     text-align: center;
     padding: 32px;
-    background-color: black;
+    background-color: rgb(2, 2, 72);
     overflow: hidden;
+    z-index: 0;
 }
 .column {
     display: -ms-flexbox; /* IE10 */
@@ -95,9 +104,39 @@ header{
     height: 800px !important;
     z-index: -1;
 }
-.zoom{}
 
-.zoomout-Gallery{}
+@keyframes zoom-Out {
+    0% {
+      transform: scale(10, 10);
+    }
+    25%{
+        transform: scale(8, 8);
+    }
+    50% {
+      transform: scale(5, 5);
+    }
+    75%{
+        transform: scale(3, 3);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  .zoom-Out-Gallery{
+    animation: zoom-Out 10s;
+  }
+  .zoom-Out-img{animation: zoom-Out-img 10s;}
+  @keyframes zoom-Out-img{
+    from{height: 100%;width: 100%;position: absolute;top: 0;left: 0;}
+    to{height: 150px;width: auto;}
+    }
+.zoom-Out{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    animation: zoom-Out 1s;
+}
 .body-Container{}
 
 
