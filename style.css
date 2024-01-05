@@ -3,7 +3,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 a{
     text-decoration: none;
@@ -18,22 +18,30 @@ header{
     width: 100%;
     height: 80px;
     background-color: rgb(2, 2, 72);
-    padding: 0 50px;
 }
 .top-Header nav{
+    width: 100% !important;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    justify-self: center;
+    border: 1px solid white;
 }
 .top-Header nav a{
     padding: 20px;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
+    justify-self: center;
 }
 .top-Header nav a:hover{
     color: beige;
 }
-.zoomIn-Gallery{}
+.zoomIn-Gallery{
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}
+.zoomIn-Gallery img{height: 100%; width: auto;}
 .zoomout-Gallery{}
 .body-Container{}
 footer{
