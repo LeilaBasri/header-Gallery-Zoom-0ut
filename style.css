@@ -1,0 +1,33 @@
+*{margin: 0;}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+header{
+    height: 100%;
+    width: 100%;
+}
+.top-Header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(2, 2, 72);
+    color: white;
+    padding: 0 50px;
+}
+.zoomIn-Gallery{}
+.zoomout-Gallery{}
+.body-Container{}
+footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(2, 2, 72);
+    color: white;
+    padding: 50px;
+}
