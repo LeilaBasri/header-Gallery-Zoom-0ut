@@ -1,14 +1,15 @@
-*{margin: 0;}
+*{margin: 0;box-sizing: border-box;}
 body{
-    margin: 0;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    font-size: 18px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 a{
     text-decoration: none;
     color: white;
     display: inline-block;
+    cursor: pointer;
 }
 header{
     height: 100%;
@@ -18,32 +19,90 @@ header{
     width: 100%;
     height: 80px;
     background-color: rgb(2, 2, 72);
+    margin: auto;
 }
 .top-Header nav{
+    width: 100% !important;
     width: 100% !important;
     display: flex;
     flex-direction: row;
     justify-content: center;
     justify-self: center;
-    border: 1px solid white;
+    margin: auto;
 }
 .top-Header nav a{
     padding: 20px;
     color: white;
     font-size: 20px;
     justify-self: center;
+    vertical-align: middle;
 }
 .top-Header nav a:hover{
-    color: beige;
+    color: rgb(169, 169, 157);
 }
+
+
+
 .zoomIn-Gallery{
-    width: 100%;
-    height: 100%;
-    margin-top: 80px;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 800px;
+    background-image: url("images/13.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px;
+    text-align: center;
+    margin: 0 !important;
+    z-index: 1;
 }
-.zoomIn-Gallery img{height: 100%; width: auto;}
+.zoomIn-Gallery h1{color: white;text-shadow: 0 1px 5px #000; margin-top: 100px;}
+.zoomIn-Gallery a{
+    padding: 20px;
+    font-size: 24px;
+    margin-top: 100px;
+    background-color: rgb(2, 2, 72);
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000;
+}
+
+.imageGrid{
+    text-align: center;
+    padding: 32px;
+    background-color: black;
+    overflow: hidden;
+}
+.column {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: column;
+    padding: 0 4px; 
+}
+
+.row {
+   padding: 0 4px; 
+   height: 150px;
+   display: -ms-flexbox; /* IE10 */
+   display: flex;
+   flex-direction: row; 
+   justify-content: space-between;
+}
+.row .zoomIn{ 
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: 800px !important;
+    z-index: -1;
+}
+.zoom{}
+
 .zoomout-Gallery{}
 .body-Container{}
+
+
+
+
 footer{
     width: 100%;
     min-height: 200px;

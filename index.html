@@ -21,8 +21,57 @@
                 <a href="">Sustainability</a>
             </nav>
         </div>
-        <div class="zoomIn-Gallery"><img src="images/15.jpg"></div>
-        <div class="zoomout-Gallery"></div>
+        <div class="zoomIn-Gallery" id="zoomIn-Gallery">
+            <h1>New Arrivals</h1>
+            <a>Shop now</a>
+        </div>
+        <div class="zoomout-Gallery">
+            <div class="imageGride">
+                <div>
+                    <div class="row">
+                        <img src="images/1.jpg" style="width: 100%;">
+                        <img src="images/2.jpg" style="width: 100%;">
+                        <img src="images/3.jpg" style="width: 100%;">
+                        <img src="images/4.jpg" style="width: 100%;">
+                        <img src="images/5.jpg" style="width: 100%;">
+                        <img src="images/6.jpg" style="width: 100%;">
+                        <img src="images/7.jpg" style="width: 100%;">
+                        <img src="images/8.jpg" style="width: 100%;">
+                    </div>
+                    <div class="row">
+                        <img src="images/9.jpg" style="width: 100%;">
+                        <img src="images/10.jpg" style="width: 100%;">
+                        <img src="images/11.jpg" style="width: 100%;">
+                        <img src="images/12.jpg" style="width: 100%;">
+                        <img src="images/13.jpg" style="width: 100%;" class="zoomIn">
+                        <img src="images/14.jpg" style="width: 100%;">
+                        <img src="images/15.jpg" style="width: 100%;">
+                        <img src="images/16.jpg" style="width: 100%;">
+                    </div>
+                    <div class="row">
+                        <img src="images/1.jpg" style="width: 100%;">
+                        <img src="images/2.jpg" style="width: 100%;">
+                        <img src="images/3.jpg" style="width: 100%;">
+                        <img src="images/4.jpg" style="width: 100%;">
+                        <img src="images/5.jpg" style="width: 100%;">
+                        <img src="images/6.jpg" style="width: 100%;">
+                        <img src="images/7.jpg" style="width: 100%;">
+                        <img src="images/8.jpg" style="width: 100%;">
+                    </div>
+                    <div class="row">
+                        <img src="images/9.jpg" style="width: 100%;">
+                        <img src="images/10.jpg" style="width: 100%;">
+                        <img src="images/11.jpg" style="width: 100%;">
+                        <img src="images/12.jpg" style="width: 100%;">
+                        <img src="images/13.jpg" style="width: 100%;">
+                        <img src="images/14.jpg" style="width: 100%;">
+                        <img src="images/15.jpg" style="width: 100%;">
+                        <img src="images/16.jpg" style="width: 100%;">
+                    </div>
+        
+                </div>
+            </div>
+        </div>
     </header>
     <div class="body-Container"></div>
     <footer>
@@ -32,4 +81,11 @@
     </footer>
     
 </body>
+<script>
+    window.onscroll = function(){zoomOutGallery()};
+    function zoomOutGallery(){
+        document.getElementById("zoomIn-Gallery").style.display="none";
+    }
+
+</script>
 </html>
